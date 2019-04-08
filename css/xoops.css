@@ -1,0 +1,136 @@
+td.even label{
+  display:inline;
+}
+
+td.even input[type="text"], td.even textarea{
+  width:90%;
+}
+
+/* ===== 主選單 ===== */
+#mainmenu a {
+  display: block;
+  margin: 6px 2px;
+  text-decoration: none;
+  color: rgb(0,51,102);
+}
+#mainmenu a:hover {
+  background-position: 0px;
+  background-repeat: no-repeat;
+  color: rgb(255,0,51);
+}
+#mainmenu a.menuTop {
+  padding-left: 8px;
+  color: rgb(255,51,0);
+  background-image: none;
+}
+#mainmenu a.menuMain {
+  padding-left: 18px;
+}
+#mainmenu a.menuSub {
+  padding-left: 36px;
+  color: rgb(0,102,102);
+}
+#mainmenu a.menuSub:hover {
+  background-position: 18px;
+  color: rgb(255,0,51);
+}
+/* ===== 使用者選單 ===== */
+#usermenu a {
+  display: block;
+  margin: 6px 2px;
+  text-decoration: none;
+  color: rgb(0,51,102);
+}
+#usermenu a:hover {
+}
+#usermenu a.menuTop {
+}
+#usermenu a.highlight {
+}
+/* ===== 項目符號 ===== */
+ul {
+  margin: 2px;
+  padding: 2px;
+  list-style: disc outside;
+  text-align: left;
+}
+ol {
+  margin: 2px;
+  padding: 2px;
+  list-style: decimal outside;
+  text-align: left;
+}
+li {
+  margin-left: 2px;
+  color: #233D5E;
+}
+/* ===== 標題預設大小 ===== */
+h1 {
+  font-size: 1.4em;
+}
+h2 {
+  font-size: 1.3em;
+}
+h3 {
+  font-size: 1.2em;
+}
+h4 {
+  font-size: 1.1em;
+}
+h5 {
+  font-size: 1em;
+}
+/* ===== 表格框線配色 ===== */
+.outer {
+  border: 1px solid silver;
+  border-collapse: collapse;
+}
+
+
+table.outer th{
+  background-color: #5e5e5e;
+  color:white;
+}
+
+.even {
+  background-color: #F5F5F5;
+  padding: 5px;
+}
+
+.odd {
+  background-color: rgb(255,255,255);
+  padding: 5px;
+}
+tr.even td {
+  background-color: #F5F5F5;
+  padding: 5px;
+}
+tr.odd td {
+  background-color: rgb(255,255,255);
+  padding: 5px;
+}
+
+td.head{
+  background-color: #e5e5e5;
+}
+
+.profile-list-activity{
+  width:100%;
+}
+
+div.comText {
+  text-wrap: normal;
+  table-layout: fixed;
+  word-wrap: break-word;
+  width: 545px;
+  min-height:250px;
+  overflow: hidden;
+  line-height:180%;
+}
+
+div.comText img {
+  max-width: 500px;
+  width: expression(this.width > 500 ? "500px": this.width);
+  overflow: hidden;
+}
+

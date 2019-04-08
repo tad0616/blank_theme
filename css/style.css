@@ -1,0 +1,83 @@
+@import url("block.css");
+body {
+  padding-top: 0px;
+}
+
+p {
+  line-height:180%;
+}
+
+.navbar{
+  margin-bottom:0px;
+}
+
+/* 用來製作網頁背景效果，僅html模式有效果 */
+#xoops_theme_container{
+  margin:0 auto;
+}
+
+/* 頁首 */
+#xoops_theme_header{
+
+}
+
+/* 內容區（包含各區域） */
+#xoops_theme_content_zone{
+}
+
+/* 左區域 */
+#xoops_theme_left_zone{
+
+}
+
+/* 主頁面區 */
+#xoops_theme_center{
+
+}
+
+/*主內容區*/
+#xoops_contents{
+
+}
+
+/* 右區域 */
+#xoops_theme_right_zone{
+
+}
+
+/* 頁尾 */
+#xoops_theme_footer{
+  background-position: center center;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+a.block_config {
+  position:absolute;
+  top:10px;
+  right:10px;
+  display: block;
+  float: right;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/block_config.png);
+}
+
+a.block_config:hover {
+  background-image: url(../img/block_config_hover.png);
+}
+
+
+.xoops_content_shadow{
+  -moz-box-shadow: :0px 0px 5px 1px #333;
+  -webkit-box-shadow: :0px 0px 5px 1px #333;
+  box-shadow:0px 0px 5px 1px #333;
+}
