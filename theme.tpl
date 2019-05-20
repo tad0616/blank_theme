@@ -5,7 +5,7 @@
     <!--將目前的資料夾名稱，設定為樣板標籤變數 theme_name-->
     <{assign var=theme_name value=$xoTheme->folderName}>
     <{php}>
-    if (file_exists(XOOPS_ROOT_PATH . "/class/xoopsform/renderer/XoopsFormRendererBootstrap4.php")) {
+    if ($_SESSION['bootstrap']==4) {
       $_SESSION['themes_tpl']="themes4_tpl";
     } else {
       $_SESSION['themes_tpl']="themes3_tpl";
