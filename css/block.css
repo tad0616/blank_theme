@@ -1,60 +1,58 @@
-.blockTitle{
-  font-weight:bold;
-  font-size:16px;
+.blockTitle {
+  font-weight: bold;
+  font-size: 1rem;
 }
 
-.blockContent{
+.blockContent {
   margin: 0px 6px 10px 6px;
 }
 
-
 /* 左區塊 */
-.leftBlock{
-  position:relative;
-  width:90%;
-  margin:5px auto;
+.leftBlock {
+  position: relative;
+  width: 90%;
+  margin: 5px auto;
 }
 
-
 /* 右區塊 */
-.rightBlock{
-  position:relative;
-  width:90%;
-  margin:5px auto;
+.rightBlock {
+  position: relative;
+  width: 90%;
+  margin: 5px auto;
 }
 
 /* 上中區塊 */
-.centerBlock{
-  position:relative;
+.centerBlock {
+  position: relative;
 
 }
 
 /* 上中左區塊 */
-.centerLeftBlock{
-  position:relative;
+.centerLeftBlock {
+  position: relative;
 
 }
 
 /* 上中右區塊 */
-.centerRightBlock{
-  position:relative;
+.centerRightBlock {
+  position: relative;
 
 }
 
 /* 下中區塊 */
-.centerBottomBlock{
-  position:relative;
+.centerBottomBlock {
+  position: relative;
 
 }
 
 /* 下中左區塊 */
-.centerBottomLeftBlock{
-  position:relative;
+.centerBottomLeftBlock {
+  position: relative;
 
 }
 
 /* 下中右區塊 */
-.centerBottomRightBlock{
-  position:relative;
+.centerBottomRightBlock {
+  position: relative;
 
 }

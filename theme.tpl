@@ -26,11 +26,13 @@
 
 
     <!-- 局部套用的樣式，如果有載入完整樣式 theme_css.tpl 那就不需要這一部份 -->
+    <{*
     <{includeq file="$xoops_rootpath/modules/tadtools/`$smarty.session.themes_tpl`/theme_css.tpl"}>
+    *}>
 
     <style type="text/css">
       body{
-        font-family:<{$font_family}>;
+        font-family: <{$font_family}>;
       }
 
       #xoops_theme_left_zone{
