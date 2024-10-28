@@ -49,7 +49,7 @@
     </style>
   </head>
 
-  <body>
+  <body  <{$prism_setup}>>
     <{$xoops_contents|default:''}>
 
     <!-- 載入bootstrap -->
