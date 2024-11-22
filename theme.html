@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html lang="<{$xoops_langcode|default:''}>">
   <head>
-    <!--目前$_SESSION['bootstrap']="<{$smarty.session.bootstrap}>"; -->
+
+    <{assign var="bootstrap" value=$smarty.session.bootstrap|default:$session.bootstrap}>
+    <!--目前$_SESSION['bootstrap']="<{$bootstrap|default:''}>"; -->
     <!--將目前的資料夾名稱，設定為樣板標籤變數 theme_name-->
-    <{assign var=theme_name value=$xoTheme->folderName}>
-    <{php}>
-    if ($_SESSION['bootstrap']==4) {
-      $_SESSION['themes_tpl']="themes4_tpl";
-    } else {
-      $_SESSION['themes_tpl']="themes3_tpl";
-    }
-    <{/php}>
-    <!--載入由使用者設定的各項佈景變數-->
-    <{include file="$xoops_rootpath/modules/tadtools/themes_common/get_var.tpl"}>
+    <{assign var="theme_name" value=$xoTheme->folderName}>
+
+
+
 
     <{include file="$xoops_rootpath/modules/tadtools/themes_common/meta.tpl"}>
     <!-- 網站的標題及標語 -->
     <title><{$xoops_sitename|default:''}> - <{$xoops_pagetitle|default:''}></title>
 
-    <{include file="$xoops_rootpath/modules/tadtools/`$smarty.session.themes_tpl`/link_css.tpl"}>
+    <{include file="$xoops_rootpath/modules/tadtools/themes_tpl`$bootstrap`/link_css.tpl"}>
 
 
     <!-- 給模組套用的樣板標籤 -->
     <{$xoops_module_header|default:''}>
-
-
-    <!-- 局部套用的樣式，如果有載入完整樣式 theme_css.tpl 那就不需要這一部份 -->
-    <{include file="$xoops_rootpath/modules/tadtools/`$smarty.session.themes_tpl`/theme_css.tpl"}>
 
     <style type="text/css">
       body{
@@ -47,14 +39,14 @@
     </style>
   </head>
 
-  <body  <{$prism_setup}>>
+  <body <{$prism_setup|default:''}>>
     <{$xoops_contents|default:''}>
 
     <!-- 載入bootstrap -->
-    <{include file="$xoops_rootpath/modules/tadtools/`$smarty.session.themes_tpl`/bootstrap_js.tpl"}>
+    <{include file="$xoops_rootpath/modules/tadtools/themes_tpl`$bootstrap`/bootstrap_js.tpl"}>
 
     <!-- 載入自訂js -->
-    <{include file="$xoops_rootpath/modules/tadtools/`$smarty.session.themes_tpl`/my_js.tpl"}>
+    <{include file="$xoops_rootpath/modules/tadtools/themes_tpl`$bootstrap`/my_js.tpl"}>
 
 
     <{$my_code|default:''}>
